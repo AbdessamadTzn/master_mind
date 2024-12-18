@@ -1,8 +1,9 @@
 import random 
 
-def generation_combinaisons_secrets(level = 4, poss = 5) :
+def generation_combinaisons_secrets() :
     
-    secret_list = [ random.randint(1,5) for leng in range (level) ]
+    
+    secret_list = [ random.randint(0,5) for leng in range (0,4) ]
     return secret_list
 
 
