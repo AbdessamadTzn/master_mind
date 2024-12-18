@@ -25,8 +25,3 @@ def joueur_interaction():
         #Catch error if input is not digit !
         print("La combinaison doit etre composée des entiers valide")
         return joueur_interaction()
-
-    
-
-
-
