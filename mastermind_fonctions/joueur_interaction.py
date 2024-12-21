@@ -1,6 +1,6 @@
 def joueur_interaction():
 
-    chiffres_acceptes = [0, 1, 2, 3, 4]
+    chiffres_acceptes = [0, 1, 2, 3, 4, 5]
 
     try:
         combinaison_joueur = int(input("Entrer une combinaison de 4 nombres entiers entre 0 et 5: "))
