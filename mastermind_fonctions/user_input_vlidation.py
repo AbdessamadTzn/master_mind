@@ -15,9 +15,8 @@ def user_input_verification():
     correctes = ['*']*4     #Pour remplacer les * par les chiffres bien placés
 
     num_chiffres_correctes = 0
-    
-
     count = 0
+    
     while count < 10:
         joueur_input = joueur_interaction.joueur_interaction()
         if combinaison == joueur_input:
@@ -29,14 +28,11 @@ def user_input_verification():
                     num_chiffres_correctes += 1
                     count += 1
                     print(f'Chiffres correctements devinés: {correctes}')
-                    print(f'T\'as encore {10 - count} chances!')
+                    if count < 10:
+                        print(f'T\'as encore {10 - count} chances!')
+                    else:
+                        print("Dommage, t'as pas deviné la bonne combinison !")
    
-            
-        # if num_chiffres_correctes < 4 :
-        #     print(f'C\'est pas la bonne combinaison, mais t\'as deviné {num_chiffres_correctes} correctements')
-        #     print(f'Chiffres correctements devinés: {correctes}')
-        # else:
-        #     print("Dommage, t'as pas deviné la bonne combinison !")
             
 
 
