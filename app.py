@@ -1,11 +1,11 @@
 
-from mastermind_fonctions import gen_combi_secrets
-from mastermind_fonctions import joueur_interaction
+from mastermind_fonctions import user_input_vlidation
 
 
 
 
 if __name__ == "__main__":
-    print(gen_combi_secrets.generation_combinaisons_secrets())
-    print(joueur_interaction.joueur_interaction())
+    
+    user_input_vlidation.user_input_verification()
+
     
