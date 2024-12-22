@@ -4,7 +4,7 @@ import os
 # Add parent directory of the current script to system
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from mastermind_fonctions import gen_combi_secrets
-from mastermind_fonctions import joueur_interaction
+from mastermind_fonctions import player_interaction
 
 # def user_input_verification():
 def user_input_verification():
@@ -18,7 +18,7 @@ def user_input_verification():
     count = 0
     
     while count < 10:
-        joueur_input = joueur_interaction.joueur_interaction()
+        joueur_input = player_interaction.player_interaction()
         if combinaison == joueur_input:
             print("T'as trouvé la bonne combinaison!")
         else:
