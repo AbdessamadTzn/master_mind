@@ -8,7 +8,7 @@ def player_interaction():
         if len(str(player_combination)) != 4:
 
             print("You must enter exactly 4 numbers!")
-            return joueur_interaction()     #To keep calling function using recursion logic & do not exit
+            return player_interaction()     #To keep calling function using recursion logic & do not exit
 
         for x in str(player_combination):
             if int(x) not in accepted_digits:
