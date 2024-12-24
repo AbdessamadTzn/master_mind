@@ -3,7 +3,7 @@ def player_interaction():
     accepted_digits = [0, 1, 2, 3, 4, 5]
 
     try:
-        player_combination = int(input("Enter a combination of 4 integers between 0 and 5: "))
+        player_combination = input("Enter a combination of 4 integers between 0 and 5: ")
     
         if len(str(player_combination)) != 4:
 
